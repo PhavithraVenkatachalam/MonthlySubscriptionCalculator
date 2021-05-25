@@ -19,30 +19,37 @@ public class ProductDetails {
     }
 
     public double getMondayPrice() {
+
         return mondayPrice;
     }
 
     public double getTuesdayPrice() {
+
         return tuesdayPrice;
     }
 
     public double getWednesdayPrice() {
+
         return wednesdayPrice;
     }
 
     public double getThursdayPrice() {
+
         return thursdayPrice;
     }
 
     public double getFridayPrice() {
+
         return fridayPrice;
     }
 
     public double getSaturdayPrice() {
+
         return saturdayPrice;
     }
 
     public double getSundayPrice() {
+
         return sundayPrice;
     }
 }

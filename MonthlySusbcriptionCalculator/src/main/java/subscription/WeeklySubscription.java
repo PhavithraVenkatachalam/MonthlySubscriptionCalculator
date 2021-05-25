@@ -5,14 +5,15 @@ import Products.Product;
 
 public class WeeklySubscription {
 
-    DaysCalculator daysCalculator;
+    private DaysCalculator daysCalculator;
 
     public WeeklySubscription() {
+
         daysCalculator = new DaysCalculator();
     }
 
-    public double calculateProductWeeklySubscriptionPrice(Product newsPaper) {
+    public double calculateProductWeeklySubscriptionPrice(Product product) {
 
-        return daysCalculator.getSundayCount(2021, 06) * newsPaper.getProductDetails().getSundayPrice();
+        return daysCalculator.getSundayCount(2021, 06) * product.getProductDetails().getSundayPrice();
     }
 }

@@ -6,9 +6,10 @@ import java.util.stream.IntStream;
 
 public class DaysCalculator {
 
-    Calendar calendar;
+    private Calendar calendar;
 
     public DaysCalculator() {
+
         calendar = Calendar.getInstance();
     }
 
@@ -18,30 +19,37 @@ public class DaysCalculator {
     }
 
     public int getMondayCount(int year, int month) {
+
         return countDayOccurence(year, month, Calendar.MONDAY);
     }
 
     public int getTuesdayCount(int year, int month) {
+
         return countDayOccurence(year, month, Calendar.TUESDAY);
     }
 
     public int getWednesdayCount(int year, int month) {
+
         return countDayOccurence(year, month, Calendar.WEDNESDAY);
     }
 
     public int getThursdayCount(int year, int month) {
+
         return countDayOccurence(year, month, Calendar.THURSDAY);
     }
 
     public int getFridayCount(int year, int month) {
+
         return countDayOccurence(year, month, Calendar.FRIDAY);
     }
 
     public int getSaturdayCount(int year, int month) {
+
         return countDayOccurence(year, month, Calendar.SATURDAY);
     }
 
     public int getSundayCount(int year, int month) {
+
         return countDayOccurence(year, month, Calendar.SUNDAY);
     }
 

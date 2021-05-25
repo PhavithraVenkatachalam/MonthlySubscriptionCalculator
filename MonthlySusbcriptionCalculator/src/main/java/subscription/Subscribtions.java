@@ -1,8 +1,6 @@
 package subscription;
 
-import Calender.DaysCalculator;
 import Products.Product;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,9 +18,9 @@ public class Subscribtions {
         weeklySubscription = new WeeklySubscription();
     }
 
-    public void subscribe(Product... paper) {
+    public void subscribe(Product... product) {
 
-        Arrays.stream(paper).forEach(p -> subscribtionList.add(p));
+        Arrays.stream(product).forEach(p -> subscribtionList.add(p));
     }
 
 
@@ -31,14 +29,14 @@ public class Subscribtions {
         return subscribtionList.stream().mapToDouble(p -> (double) totalPriceforSpecificProduct(p)).sum();
     }
 
-    public double totalPriceforSpecificProduct(Product newsPaper) {
+    public double totalPriceforSpecificProduct(Product product) {
 
-        if (newsPaper.getFrequency().toString().equalsIgnoreCase("monthly")) {
-            return monthlySubscription.calculateProductMonthlySubscriptionPrice(newsPaper);
+        if (product.getFrequency().toString().equalsIgnoreCase("monthly")) {
+            return monthlySubscription.calculateProductMonthlySubscriptionPrice(product);
         }
 
-        if (newsPaper.getFrequency().toString().equalsIgnoreCase("weekly")) {
-            return weeklySubscription.calculateProductWeeklySubscriptionPrice(newsPaper);
+        if (product.getFrequency().toString().equalsIgnoreCase("weekly")) {
+            return weeklySubscription.calculateProductWeeklySubscriptionPrice(product);
         }
 
         return 0;
