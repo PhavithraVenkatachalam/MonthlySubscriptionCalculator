@@ -22,7 +22,7 @@ public class TestMonthlySubscription {
     }
 
     @Test
-    public void shouldTestProductsUnderDifferentCategories()
+    public void shouldTestProductsUnderDifferentSubscriptionFrequency()
     {
 
         ProductDetails hinduDetails=new ProductDetails(Paper.Hindu,2.5,2.5,2.5,2.5,2.5,4,4);
