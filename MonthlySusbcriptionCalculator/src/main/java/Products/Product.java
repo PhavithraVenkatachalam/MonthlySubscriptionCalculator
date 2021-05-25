@@ -10,8 +10,8 @@ public class Product implements IProduct {
     private Frequency subscribedfrequency;
 
 
-    public Product(ProductDetails paperDetails, Frequency frequency, String category) {
-        this.productDetails = paperDetails;
+    public Product(ProductDetails productDetails, Frequency frequency, String category) {
+        this.productDetails = productDetails;
         this.subscribedfrequency = frequency;
         this.category = category;
     }
