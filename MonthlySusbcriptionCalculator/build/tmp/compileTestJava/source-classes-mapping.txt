@@ -1,2 +1,2 @@
-TestMontlySubscription.java
- TestMontlySubscription
+TestMonthlySubscription.java
+ TestMonthlySubscription
